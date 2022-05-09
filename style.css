@@ -1,0 +1,40 @@
+.color {
+background-color: bisque;
+width: 200px;
+height: 200px;
+}
+
+.changecolor {
+    background-color: pink;
+}
+
+
+.container{
+    display: flex;
+    
+}
+
+
+.slider{
+    width: 256px;
+    height: 256px;
+    border: 2px solid grey;
+    overflow: hidden;
+}
+
+
+img{
+    width: 256px;
+    /* height: 500px; */
+}
+
+.slider-line{
+    height: 256px;
+    width: 768px;
+    background: rgb(155, 188, 230);
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 0.5s;
+
+}

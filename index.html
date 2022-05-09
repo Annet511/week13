@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calc</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -28,10 +29,55 @@
 
 
 
-    <button onclick=plus()> + </button>
+    <!--  13 неделя: ниже вариант самый простой, при котором на клике на каждую кнопку срабатывает два промпта и потом алертом выводится значение в соответствии с оператором -->
+
+    <!-- <button onclick=plus()> + </button>
     <button onclick=minus()> - </button>
     <button onclick=times()> * </button>
-    <button onclick=devide()> / </button>
+    <button onclick=devide()> / </button> -->
+
+
+
+    <!-- 14 неделя надо использовать инпуты для ввода чисел и див для вывода результата -->
+
+    <input id="num1" type="text" placeholder="введите первое число" />
+    <input id="num2" type="text" placeholder="введите второе число" />
+    <div>
+        <button onclick="plus()"> + </button>
+        <button onclick="minus()"> - </button>
+        <button onclick="times()"> * </button>
+        <button onclick="divide()"> / </button>
+    </div>
+
+    <p id="out">результат</p>
+    <!-- <input id="out" /> -->
+
+
+    <h2>Change Color</h2>
+    <div class="color" onclick="changeColor(this)"></div>
+
+
+    <h2>Galery</h2>
+
+    <div class="container">
+        <button class="slider-prev">Prev</button>
+        <div class="slider">
+            <div class="slider-line">
+                <img src="images/1195226B-E170-4A73-9C56-12FEFCDBEF22_1_105_c.jpeg" alt=" ">
+                <img src="images/7A305FEE-E435-4143-85C4-A854223262C3_1_105_c.jpeg" alt=" ">
+                <img src="images/88F4A4F7-8BEC-4D36-818C-D638CC64A740_1_105_c.jpeg" alt=" ">
+            </div>
+        </div>
+
+        <button class="slider-next">Next</button>
+    </div>
+
+
+
+
+
+
+
 
     <script src="script.js"></script>
 </body>
