@@ -63,7 +63,7 @@ function plus(){
     let num2 = document.getElementById('num2').value;
     num2 = Number(num2);
     let result = num1 + num2;
-    document.getElementById('out').innerHTML = result;
+    document.getElementById('out').innerHTML = "результат: "  + result;
 }
 function minus(){
     let num1 = document.getElementById('num1').value;
@@ -72,7 +72,7 @@ function minus(){
     let num2 = document.getElementById('num2').value;
     num2 = Number(num2);
     let result = num1 - num2;
-    document.getElementById('out').innerHTML = result;
+    document.getElementById('out').innerHTML = "результат: "  + result;
 }
 function times(){
     let num1 = document.getElementById('num1').value;
@@ -80,8 +80,9 @@ function times(){
 
     let num2 = document.getElementById('num2').value;
     num2 = Number(num2);
+    
     let result = num1 * num2;
-    document.getElementById('out').innerHTML = result;
+    document.getElementById('out').innerHTML = "результат: "  + result;
 }
 function divide(){
     let num1 = document.getElementById('num1').value;
@@ -89,8 +90,13 @@ function divide(){
 
     let num2 = document.getElementById('num2').value;
     num2 = Number(num2);
+
+    if (num2 == 0) {
+        alert ("на ноль делить нельзя");
+    }
+    
     let result = num1 / num2;
-    document.getElementById('out').innerHTML = result;
+    document.getElementById('out').innerHTML = "результат: "  + result;
 }
 
 
@@ -98,6 +104,7 @@ function changeColor (sender) {
 sender.classList.add ('changecolor');
 }
 
+// далее код для слайдера
 
 let offset = 0; // смещение от левого края
 const sliderLine = document.querySelector ('.slider-line');
